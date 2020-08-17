@@ -27,8 +27,8 @@ public class HttpUtil {
 	
 	
 	static int CONNECT_TIME_OUT = 1000;  
-  static int SOCKET_TIME_OUT = 2000;  
-  static int CONNECTION_REQUEST_TIME_OUT = 2000;  
+  	static int SOCKET_TIME_OUT = 2000;  
+  	static int CONNECTION_REQUEST_TIME_OUT = 2000;  
 	
 	public static String sendPost(String url,List params,String hostName,String port){
 		try {  
@@ -88,9 +88,9 @@ public class HttpUtil {
 		return null;  
 	}
 	
-public static void main(String[] args) {
-  List params = new ArrayList();
-  params.add(new BasicNameValuePair("userCode", "123"));
-  params.add(new BasicNameValuePair("password", "123"));
-  String data = HttpUtil.sendPost("http://localhost:8088/user/test", params, "127.0.0.1", "80");
-}
+	public static void main(String[] args) {
+	  List params = new ArrayList();
+	  params.add(new BasicNameValuePair("userCode", "123"));
+	  params.add(new BasicNameValuePair("password", "123"));
+	  String data = HttpUtil.sendPost("http://localhost:8088/user/test", params, "127.0.0.1", "80");
+	}
