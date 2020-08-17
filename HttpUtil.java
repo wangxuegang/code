@@ -92,5 +92,5 @@ public class HttpUtil {
 	  List params = new ArrayList();
 	  params.add(new BasicNameValuePair("userCode", "123"));
 	  params.add(new BasicNameValuePair("password", "123"));
-	  String data = HttpUtil.sendPost("http://localhost:8088/user/test", params, "127.0.0.1", "80");
+	  String data = HttpUtil.sendPost("http://www.baidu.com", params, "127.0.0.1", "80");
 	}
